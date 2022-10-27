@@ -39,11 +39,24 @@
 
                     <li 
                     v-for="(item, index) in tasks" 
-                    :class="{line : item.done}">
+                    :class="{line : item.done}"
+                    >
                         {{ item.text }}
                         
-                        <span class="check">[&check;]</span>
-                        <span class="cross">[&cross;]</span>
+                        <span 
+                        class="check"
+                        
+                        >
+                        [&check;]
+                        </span>
+
+
+                        <span 
+                        class="cross"
+                        @click="deleteTask"
+                        >
+                        [&cross;]
+                        </span>
 
                     </li>
 
