@@ -21,3 +21,21 @@ ul li{
 .done{
     text-decoration: line-through;
 }
+
+.cross{
+    color: red;
+    
+}
+
+.check{
+    color: green;
+}
+
+.cross:hover, 
+.check:hover{
+    cursor: pointer;
+}
+
+.line{
+    text-decoration: line-through;
+}

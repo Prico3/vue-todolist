@@ -24,35 +24,31 @@ const { createApp } = Vue;
 createApp({
     data(){
         return{
-            isDone : true,
+            
             newTask:{
                 text:"",
-                done: false,
+                done: false
             },
 
             tasks: [
                 {
                     text: "Fare spesa",
-                    done: false,
+                    done: false
                 },
 
                 {
                     text: "Fare esercizio",
-                    done: false,
+                    done: true
                 }
             ]
         }
     },
 
     methods: {
-        // taskCompleted() {
-        //     if(this.tasks === true){
-        //         this.tasks = "";
-        //     }
-        // }
+
         addNewTask(){
             this.tasks.push({...this.newTask})
-            
+
         }
     }
 

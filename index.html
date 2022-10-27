@@ -36,8 +36,14 @@
 
                 <ul>
 
-                    <li v-for="(task, index) in tasks" >
+                    <li 
+                    v-for="(task, index) in tasks" 
+                    :class="{line : tasks.done}">
                         {{ task.text }}
+                        
+                        <span class="check">[&check;]</span>
+                        <span class="cross">[&cross;]</span>
+
                     </li>
 
                 </ul>
