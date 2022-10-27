@@ -1,0 +1,23 @@
+.ms-container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main{
+    background-color: bisque;
+
+}
+
+.list-wrapper ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+ul li{
+    margin-top: 1rem;
+}
+
+.done{
+    text-decoration: line-through;
+}
