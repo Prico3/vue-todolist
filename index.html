@@ -28,6 +28,7 @@
                 id="new-task"
                 placeholder="Inserisci una nuova task"
                 v-model="newTask.text"
+                @keyup.enter="addNewTask"
                 >
                 <button @click="addNewTask">Aggiungi</button>
             </div>
@@ -37,9 +38,9 @@
                 <ul>
 
                     <li 
-                    v-for="(task, index) in tasks" 
-                    :class="{line : tasks.done}">
-                        {{ task.text }}
+                    v-for="(item, index) in tasks" 
+                    :class="{line : item.done}">
+                        {{ item.text }}
                         
                         <span class="check">[&check;]</span>
                         <span class="cross">[&cross;]</span>
